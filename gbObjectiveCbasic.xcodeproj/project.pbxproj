@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB623CB822ED88D0009CD250 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = DB623CB722ED88D0009CD250 /* Student.m */; };
 		DB74B70022D100E200532283 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74B6FF22D100E200532283 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DB623CB622ED88D0009CD250 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Student.h; path = ../../../../../../../System/Volumes/Data/Users/ealesid/Documents/XCodeProjects/gbObjectiveCbasic/gbObjectiveCbasic/Student/Student.h; sourceTree = "<group>"; };
+		DB623CB722ED88D0009CD250 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Student.m; path = ../../../../../../../System/Volumes/Data/Users/ealesid/Documents/XCodeProjects/gbObjectiveCbasic/gbObjectiveCbasic/Student/Student.m; sourceTree = "<group>"; };
 		DB74B6FC22D100E200532283 /* gbObjectiveCbasic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gbObjectiveCbasic; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB74B6FF22D100E200532283 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB623CB522ED8891009CD250 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				DB623CB622ED88D0009CD250 /* Student.h */,
+				DB623CB722ED88D0009CD250 /* Student.m */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
 		DB74B6F322D100E200532283 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +69,7 @@
 		DB74B6FE22D100E200532283 /* gbObjectiveCbasic */ = {
 			isa = PBXGroup;
 			children = (
+				DB623CB522ED8891009CD250 /* Student */,
 				DB74B6FF22D100E200532283 /* main.m */,
 			);
 			path = gbObjectiveCbasic;
@@ -102,6 +115,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = DB74B6F322D100E200532283;
 			productRefGroup = DB74B6FD22D100E200532283 /* Products */;
@@ -119,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB74B70022D100E200532283 /* main.m in Sources */,
+				DB623CB822ED88D0009CD250 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +255,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +264,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
