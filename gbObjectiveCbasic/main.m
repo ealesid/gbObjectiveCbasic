@@ -1,24 +1,30 @@
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-#import "Student/Student.h"
+#import "Bird.h"
+#import "Swarm.h"
 
 
 int main(int argc, const char * argv[]) {
+    
+    Bird * blackBird = [[Bird alloc] initWithKind: @"blackBird"];
+    Bird * blueBird = [[Bird alloc] initWithKind: @"blueBird"];
+    Bird * redBird = [[Bird alloc] initWithKind: @"redBird"];
+    
+    Swarm * birdsSwarm = [[Swarm alloc] init];
+    [birdsSwarm addBird: blackBird];
+    [birdsSwarm addBird: blueBird];
+    [birdsSwarm addBird: redBird];
+    
+    for (Bird *bird in birdsSwarm.birdsArray) { [bird fly]; }
+    
+    NSLog(@"Removing swarm...");
+    [birdsSwarm remove];
+
+    
+    
     @autoreleasepool {
         
-        Student *student1 = [[Student alloc] init: @"1st":@"Student":19];
-        Student *student2 = [[Student alloc] init: @"2nd":@"Student":21];
-        Student *student3 = [[Student alloc] init: @"3rd":@"Student":22];
-        
-        NSArray *students = [NSArray arrayWithObjects: student1, student2, student3, nil];
-        
-        for (Student *student in students) {
-            NSLog(@"%@", student);
-        };
-
-        printf("\n**\t Increase age\n");
-        [student1 increaseAgeByYear];
-        NSLog(@"%@", student1);
     }
+
     return 0;
 }
