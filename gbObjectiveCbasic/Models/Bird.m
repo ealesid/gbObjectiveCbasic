@@ -11,13 +11,8 @@
 @implementation Bird
 
 - (instancetype) initWithKind: (NSString *) kind {
-    
     self = [super init];
-    if (self) {
-        [kind retain];
-        [_kind release];
-        _kind = kind;
-    }
+    if (self) { _kind = kind; }
     return self;
 }
 
@@ -27,8 +22,7 @@
 
 - (void) dealloc {
     NSLog(@"Bird %@ dealloc.", _kind);
-    [_kind release];
-    [super dealloc];
+//    [super dealloc];
 }
 
 @end

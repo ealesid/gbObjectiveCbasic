@@ -16,8 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSMutableArray<Bird *> * birdsArray;
 
-//- (instancetype) init;
-
 - (void) addBird: (Bird *) bird;
 
 - (void) remove;

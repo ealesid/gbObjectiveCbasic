@@ -24,12 +24,12 @@
 }
 
 - (void) remove {
-    for (Bird *bird in _birdsArray) { [bird release]; }
+    [_birdsArray removeAllObjects];
     
-    [_birdsArray release];
-    [super dealloc];
+    NSLog(@"Swarm removed. Birds in swarm: %lu", (unsigned long)_birdsArray.count);
+
+//    [super dealloc];
     
-    NSLog(@"Swarm removed.");
 }
 
 @end
