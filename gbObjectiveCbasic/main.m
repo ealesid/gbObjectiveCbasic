@@ -20,11 +20,5 @@ int main(int argc, const char * argv[]) {
     NSLog(@"Removing swarm...");
     [birdsSwarm remove];
 
-    
-    
-    @autoreleasepool {
-        
-    }
-
     return 0;
 }
