@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DB74B70022D100E200532283 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74B6FF22D100E200532283 /* main.m */; };
+		DBA0599E22F608EA000DBC31 /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA0599A22F608E9000DBC31 /* Bird.m */; };
+		DBA0599F22F608EA000DBC31 /* Swarm.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA0599D22F608EA000DBC31 /* Swarm.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		DB74B6FC22D100E200532283 /* gbObjectiveCbasic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gbObjectiveCbasic; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB74B6FF22D100E200532283 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBA0599A22F608E9000DBC31 /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
+		DBA0599B22F608EA000DBC31 /* Swarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swarm.h; sourceTree = "<group>"; };
+		DBA0599C22F608EA000DBC31 /* Bird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
+		DBA0599D22F608EA000DBC31 /* Swarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Swarm.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,21 @@
 		DB74B6FE22D100E200532283 /* gbObjectiveCbasic */ = {
 			isa = PBXGroup;
 			children = (
+				DBA0599922F608D6000DBC31 /* Models */,
 				DB74B6FF22D100E200532283 /* main.m */,
 			);
 			path = gbObjectiveCbasic;
+			sourceTree = "<group>";
+		};
+		DBA0599922F608D6000DBC31 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBA0599C22F608EA000DBC31 /* Bird.h */,
+				DBA0599A22F608E9000DBC31 /* Bird.m */,
+				DBA0599B22F608EA000DBC31 /* Swarm.h */,
+				DBA0599D22F608EA000DBC31 /* Swarm.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA0599F22F608EA000DBC31 /* Swarm.m in Sources */,
+				DBA0599E22F608EA000DBC31 /* Bird.m in Sources */,
 				DB74B70022D100E200532283 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

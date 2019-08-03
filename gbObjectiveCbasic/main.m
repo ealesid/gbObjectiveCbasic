@@ -1,44 +1,26 @@
-#import <Foundation/Foundation.h>
+@import Foundation;
+
+#import "Bird.h"
+#import "Swarm.h"
+
 
 int main(int argc, const char * argv[]) {
+    
     @autoreleasepool {
+        Bird * blackBird = [[Bird alloc] initWithKind: @"blackBird"];
+        Bird * blueBird = [[Bird alloc] initWithKind: @"blueBird"];
+        Bird * redBird = [[Bird alloc] initWithKind: @"redBird"];
         
-        //        1st and 2nd Tasks
+        Swarm * birdsSwarm = [[Swarm alloc] init];
+        [birdsSwarm addBird: blackBird];
+        [birdsSwarm addBird: blueBird];
+        [birdsSwarm addBird: redBird];
+
+        for (Bird *bird in birdsSwarm.birdsArray) { [bird fly]; }
         
-        printf("\n\t 1st & 2nd Tasks \n");
-        
-        double firstNumber = 0.0;
-        double secondNumber = 0.0;
-        
-        printf("1st number?: ");
-        scanf("%lf", &firstNumber);
-        printf("2nd number?: ");
-        scanf("%lf", &secondNumber);
-        
-        NSLog(@"Summ of %.2lf and %.2lf is %.2lf", firstNumber, secondNumber, firstNumber + secondNumber);
-        NSLog(@"Diff of %.2lf and %.2lf is %.2lf", firstNumber, secondNumber, firstNumber - secondNumber);
-        NSLog(@"Mulltiply of %.2lf and %.2lf is %.2lf", firstNumber, secondNumber, firstNumber * secondNumber);
-        NSLog(@"Division of %.2lf and %.2lf is %.2lf", firstNumber, secondNumber, firstNumber / secondNumber);
-        
-        //        3rd Task
-        
-        printf("\n\t 3rd Task \n");
-        
-        double firstNum;
-        double secondNum;
-        double thirdNum;
-        
-        printf("1st number?: ");
-        scanf("%lf", &firstNum);
-        printf("2nd number?: ");
-        scanf("%lf", &secondNum);
-        printf("3rd number?: ");
-        scanf("%lf", &thirdNum);
-        
-        NSLog(
-              @"Average of %.2lf, %.2lf, %.2lf is %.2lf",
-              firstNum, secondNum, thirdNum, (firstNum + secondNum + thirdNum) / 3
-              );
+        NSLog(@"Removing swarm...");
+        [birdsSwarm remove];
     }
+
     return 0;
 }
